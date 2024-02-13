@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-bg: #F4FCFF;
+    --color-p: #121214;
+    --color-azul-500: rgba(6, 94, 124, 1);
+    --color-azul-900: rgb(6, 94, 124);
+    font-family: "Mulish", sans-serif;
+}
+
+body {
+    background: var(--color-bg);
+}
+
+body,
+form,
+button,
+input {
+    font-family: "Mulish", sans-serif;
+}
+
+.app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
+
+header {
+    background: var(--color-azul-900);
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 26px;
+}
+
+header form {
+    flex: 1;
+}
+
+header form input {
+    width: 100%;
+    padding: 0.6rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+header form input::placeholder {
+    color: #fff;
+    font-size: 0.875rem;
+}
+
+.main-container img {
+    width: 100vw;
+}
+
+.title-like {
+    padding: 31px 22px;
+}
+
+.title-like h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.like-dislike {
+    margin-top: 8px;
+    display: flex;
+    gap: 12px;
+}
+
+.like-dislike img {
+    width: 50px;
+}
+
+.main-container p {
+    padding: 25px 15px;
+    color: var(--color-p);
+    font-size: 1rem;
+
+}
+
+.sidebar {
+    padding: 25px 15px;
+}
+
+.sidebar h2 {
+    margin-bottom: 32px;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.artigos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.artigo-item {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.info-artigo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.info-artigo h3 {
+    font-size: 1rem;
+}
+
+.info-artigo p {
+    font-size: 0.875rem;
+}
+
+footer {
+    background-color: var(--color-azul-900);
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    padding: 25px 15px;
+}
+
+@media (min-width:1100px) {
+
+    header {
+        padding: 3rem 14rem;
+        gap: 10rem;
+
+    }
+
+    header form input {
+        padding: 1.8rem;
+    }
+
+    header form input::placeholder {
+        font-size: 2rem;
+        align-items: center;
+    }
+
+    header img {
+        width: 100px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 600px;
+        padding: 3rem 7rem;
+        gap: 40px;
+        margin: 0 auto;
+    }
+
+    .title-like {
+        padding: 40px 0;
+    }
+
+    .title-like h2,
+    .sidebar h2 {
+        font-size: 2.3rem;
+    }
+
+    .like-dislike img {
+        height: 70px;
+    }
+
+    .like-dislike {
+        gap: 20px;
+    }
+
+    .main-container {
+        max-width: 1500px;
+    }
+
+    .main-container img {
+        width: 100%;
+    }
+
+    .main-container p {
+        padding: 0;
+        font-size: 2rem;
+    }
+
+    .sidebar {
+        padding: 0;
+    }
+
+    .title-like {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sidebar {
+        padding: 0;
+    }
+
+    .artigo-item img {
+        width: 150px;
+    }
+
+    .info-artigo h3{
+        font-size: 1.5rem;
+    }
+
+    .info-artigo p{
+        font-size: 1.5rem;
+    }
+
+    footer {
+        font-size: 2rem;
+        padding: 2rem 4rem;
+    }
+}
